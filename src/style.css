@@ -1,4 +1,52 @@
-h1 {
- background-color: aqua;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+}
 
+.container {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.date-time, .location {
+    margin: 0;
+}
+
+.weather {
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.search-form {
+    margin: 50px 0;
+}
+
+.search-form input {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    margin-right: 10px;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.forecast {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.forecast-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    flex: 1;
+    margin: 10px;
 }
