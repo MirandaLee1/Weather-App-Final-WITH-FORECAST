@@ -10,13 +10,27 @@ body {
     padding: 50px 0;
 }
 
-.date-time, .location {
-    margin: 0;
+.date-time{
+    font-size: 20px;
+}
+
+.location {
+    margin: 20px;
+    font-size: 40px;
+}
+
+.weather-info {
+    width: 100%;
+    text-align: center;
 }
 
 .weather {
     font-size: 50px;
-    margin: 20px 0;
+}
+
+.wind, .humidity {
+    font-size: 20px;
+    margin: 10px auto; /* Auto margins center the elements */
 }
 
 .search-form {
@@ -41,7 +55,7 @@ body {
 .forecast {
     display: flex;
     justify-content: space-between;
-    padding: 20px 50px;
+    padding: 5px 50px;
 }
 
 .forecast-item {
