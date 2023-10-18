@@ -1,66 +1,105 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: pink;
+
+.weather-app {
+  border-color:  rgba(213, 235, 235, 0.779); ;
+  border-radius: 1%;
+  background-color: rgba(213, 235, 235, 0.442);
+  color: grey
+  text-transform: ;
+  width: 600px;
+  margin: 30px auto;
+  padding: 30px;
+
+}
+header {
+  text-align: center;
+  padding: 5px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
-.container {
-    text-align: center;
-    padding: 50px 0;
+h1 {
+  font-size: 40px;
 }
 
-.date-time{
-    font-size: 20px;
+country {
+  font-size: 30px;
+  
 }
 
-.location {
-    margin: 20px;
-    font-size: 40px;
+
+h2 {
+  font-size: 15px;
 }
 
-.weather-info {
-    width: 100%;
-    text-align: center;
+h3, h4 {
+  font-size: 30px;
 }
 
-.weather {
-    font-size: 50px;
+.cold-main {
+  color: rgb(175, 215, 243);
+  font-size: 40px;
 }
 
-.wind, .humidity {
-    font-size: 20px;
-    margin: 10px auto; /* Auto margins center the elements */
+
+.row {
+
+  font-size: 40px;
+  text-align: center;
 }
 
-.search-form {
-    margin: 50px 0;
+.card {
+  margin: auto;
+  border: white;
+
+  
+
+}
+.card-title {
+  font-size: 20px;
 }
 
-.search-form input {
-    padding: 10px;
-    font-size: 17px;
-    border: none;
-    margin-right: 10px;
+.card-text {
+  font-size: 12px;
 }
 
-.search-form button {
-    padding: 10px 20px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    cursor: pointer;
+.sunny-time, .thunder-time, .cold-time {
+  font-size: 30px;
+  margin: 10px auto 0;
 }
 
-.forecast {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 50px;
+.sunny-time {
+ 
+  color: rgb(234, 234, 77);
 }
 
-.forecast-item {
-    border: 1px solid #ddd;
-    padding: 20px;
-    flex: 1;
-    margin: 10px;
+.thunder-time {
+
+  color: grey;
+  
+}
+
+.cold-time {
+  color: rgb(175, 215, 243);
+}
+
+form {
+  display: block;
+  padding: 20px;
+}
+
+.searchbutton {
+  display: block;
+  margin: 20px auto;
+  padding: 5px 20px;
+  font-size: 17px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border: none;
+  border-radius: 15px;
+  color: black;
+  transition-delay: 25ms;
+  
+}
+
+.searchbutton:hover {
+  color: black;
+  background-color:powderblue;
 }
