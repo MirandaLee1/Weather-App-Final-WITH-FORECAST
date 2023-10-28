@@ -1,7 +1,13 @@
 function formatDate(timestamp){
     let date = new Date (timestamp);
     let hours = date.getHours();
+        if (hours < 10) {
+          hours = `0${minutes}`;
+        }
     let minutes = date.getMinutes();
+        if (minutes <10) {
+        minutes = `0${minutes}`;
+        }
     let days = 
     ["Sunday", 
     "Monday", 
@@ -13,14 +19,12 @@ function formatDate(timestamp){
 
     let day = days[date.getDay()];
     return `${day} ${hours}:${minutes}`;
-
-
 }
 
 
 
 function displayTemperature(response) {
-    console.log (response.data);
+
 
 let tempElement = document.querySelector("#temp")
 let cityElement = document.querySelector("#city")
@@ -42,6 +46,7 @@ windElement.innerHTML = `${(response.data.wind.speed)} km/h`;
 humidityElement.innerHTML = `${(response.data.temperature.humidity)}%`;
 pressureElement.innerHTML = `${(response.data.temperature.pressure)} Pa`;
 }
+
 
 let apiKey = "a8653dt9c848fab44feofb6cd970ad29";
 let apiURL = `https://api.shecodes.io/weather/v1/current?query=Berlin&key=${apiKey}&units=metric`;
