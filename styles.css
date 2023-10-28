@@ -27,16 +27,21 @@ h3 {
   font-size: 30px;
 }
 
-h4, h5 {
-display: inline;
-font-size: 10px;
-margin: auto auto auto;
 
-}
-h6 {
-  font-size: 20px;
-  margin: 10pxpx;
+h4:first-letter {
   text-transform: capitalize;
+}
+
+  h4 {font-size: 12px;
+  margin: 10pxpx
+}
+
+h5:first-letter {
+  text-transform: capitalize;
+}
+
+  h5 {font-size: 25px;
+  margin: 10pxpx
 }
 
 
