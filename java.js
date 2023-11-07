@@ -2,7 +2,7 @@ function formatDate(timestamp){
     let date = new Date (timestamp);
     let hours = date.getHours();
         if (hours < 10) {
-          hours = `0${minutes}`;
+          hours = `0${hours}`;
         }
     let minutes = date.getMinutes();
         if (minutes <10) {
@@ -52,7 +52,7 @@ pressureElement.innerHTML = `${(response.data.temperature.pressure)} Pa`;
 
 
 let apiKey = "a8653dt9c848fab44feofb6cd970ad29";
-let apiURL = `https://api.shecodes.io/weather/v1/current?query=London&key=${apiKey}&units=metric`;
+let apiURL = `https://api.shecodes.io/weather/v1/current?query=Barcelona&key=${apiKey}&units=metric`;
 console.log(apiURL)
 axios.get(apiURL).then(displayTemperature);
 
