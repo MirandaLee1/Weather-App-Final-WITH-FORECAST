@@ -16,9 +16,6 @@
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
-h1 {
-margin: auto 0px;
-}
 
 
 h2 {
@@ -140,6 +137,6 @@ form {
   background-color:powderblue;
 }
 
-.openSource {
+.Footnote {
 font-size: 10px;
 }
