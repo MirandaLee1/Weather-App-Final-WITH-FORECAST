@@ -7,13 +7,13 @@
   display: block;
   transform: scale(0.8);
   border-color:  rgba(213, 235, 235, 0.779); ;
-  border-radius: 1%;
+  border-radius: 5%;
   background-color: rgba(213, 235, 235, 0.442);
   width: 700px;
   margin: 0px auto;
   padding: 20px 40px;
   text-align: center;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
@@ -120,7 +120,10 @@ h5:first-letter {
 }
 
 .search-form-input {
-  flex: 1; /* Allow the input to take up remaining space */
+  flex: 1;
+  justify-content: center; /* Horizontally center the form */
+  align-items: center; /* Vertically center the form */
+ /* Allow the input to take up remaining space */
   height: 40px;
   margin: 25px 20px;
   padding: 0px 20px;
@@ -134,12 +137,12 @@ h5:first-letter {
 
 .searchbutton {
   height: 40px; /* Adjust the height to make it smaller */
-  margin: 25px 0; /* Adjust margin to control the spacing */
+  margin: 25px 30px auto auto; /* Adjust margin to control the spacing */
   padding: 0 10px; /* Adjust padding to control the button's size */
   font-size: 14px; /* Adjust the font size */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border: none;
-  border-radius: 15px;
+  border-radius: 35px;
   color: black;
   background-color: #ccc; /* Add a background color for the button */
   cursor: pointer;
@@ -147,7 +150,6 @@ h5:first-letter {
 
 .searchbutton:hover {
   display: flexbox;
-  color: black;
   background-color:powderblue;
   border-radius: 15px;
   color: black;
