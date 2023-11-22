@@ -81,12 +81,12 @@ h5:first-letter {
 }
 
 .card {
-  margin: auto;
   border: white;
-
-  
+  padding: 5px 5px;
+  margin: 0px 10px
 
 }
+
 .card-title {
   font-size: 20px;
 }
@@ -120,23 +120,18 @@ h5:first-letter {
   justify-content: center 
 }
 
-.card {
-  margin-right: 10px; /* Adjust as needed for spacing */
-}
-
-
 .searchForm {
   display: flex;
   align-items: center;
+  margin: 5px 70px;
 }
 
 .search-form-input {
   flex: 1;
   justify-content: center;
   align-items: center; 
+  padding-left: 25px;
   height: 40px;
-  margin: 25px 20px;
-  padding: 0px 20px;
   font-size: 17px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border: none;
@@ -147,8 +142,8 @@ h5:first-letter {
 
 .searchbutton {
   height: 40px; 
-  margin: 25px 30px auto auto; 
-  padding: 0 10px; 
+  margin: 25px 5px 25px 23px; 
+  padding: 0 18px; 
   font-size: 14px; 
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border: none;
@@ -170,5 +165,6 @@ h5:first-letter {
 .Footnote {
 font-size: 10px;
 text-align: center;
+margin-bottom: 10px;
 
 }
