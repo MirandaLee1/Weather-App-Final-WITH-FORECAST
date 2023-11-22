@@ -61,7 +61,6 @@ axios.get(apiURL).then(refreshWeather);
 }
 
 
-
 function handleSearchSubmit(event)
 {
   event.preventDefault();
@@ -73,12 +72,37 @@ function handleSearchSubmit(event)
   
 }
 
+
+function displayForecast() {
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml = 
+      forecastHtml + 
+      `
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 5rem;">
+              <i class="fa-regular fa-sun sunny-time"></i>
+              <div class="card-body">
+                  <h3 class="card-title">7°</h3>
+                  <p class="card-text">${day}</p>
+              </div>
+          </div>
+        </div>
+      </div>`;
+  });
+
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
+
+
+
 let searchFormElement = document.querySelector("#searchForm")
 searchFormElement.addEventListener("submit", handleSearchSubmit); 
 
 
-
-
-
-
-
+searchCity("Paris");
+displayForecast();

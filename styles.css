@@ -47,7 +47,7 @@ h5:first-letter {
 .weather-metrics {
   display: flex;
   justify-content: center;
-  gap: 20px; /* to create spacing between divs */
+  gap: 20px; 
   padding: 20px 0;
   margin: auto 0px;
 }
@@ -55,7 +55,7 @@ h5:first-letter {
 .weather-metrics > div {
   display: flex;
   align-items: center;
-  gap: 8px; /* spacing between icon and text */
+  gap: 8px; 
 }
 
 .wind, .humidity, .pressure {
@@ -114,6 +114,16 @@ h5:first-letter {
   color: rgb(175, 215, 243);
 }
 
+#forecast {
+  display: flex;
+  justify-content: center 
+}
+
+.card {
+  margin-right: 10px; /* Adjust as needed for spacing */
+}
+
+
 .searchForm {
   display: flex;
   align-items: center;
@@ -121,9 +131,8 @@ h5:first-letter {
 
 .search-form-input {
   flex: 1;
-  justify-content: center; /* Horizontally center the form */
-  align-items: center; /* Vertically center the form */
- /* Allow the input to take up remaining space */
+  justify-content: center;
+  align-items: center; 
   height: 40px;
   margin: 25px 20px;
   padding: 0px 20px;
@@ -136,15 +145,15 @@ h5:first-letter {
 }
 
 .searchbutton {
-  height: 40px; /* Adjust the height to make it smaller */
-  margin: 25px 30px auto auto; /* Adjust margin to control the spacing */
-  padding: 0 10px; /* Adjust padding to control the button's size */
-  font-size: 14px; /* Adjust the font size */
+  height: 40px; 
+  margin: 25px 30px auto auto; 
+  padding: 0 10px; 
+  font-size: 14px; 
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border: none;
   border-radius: 35px;
   color: black;
-  background-color: #ccc; /* Add a background color for the button */
+  background-color: #ccc; 
   cursor: pointer;
 }
 
@@ -159,4 +168,5 @@ h5:first-letter {
 
 .Footnote {
 font-size: 10px;
+text-align: center;
 }
