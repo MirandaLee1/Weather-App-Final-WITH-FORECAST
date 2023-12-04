@@ -82,10 +82,10 @@ axios(apiUrl).then(displayForecast);
 
 function displayForecast(response) {
   console.log(response.data);
-  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+
   let forecastHtml = "";
 
-  days.forEach(function (day) {
+  response.data.daily.forEach(function (day) {
     forecastHtml = 
       forecastHtml + 
       `
@@ -94,8 +94,8 @@ function displayForecast(response) {
           <div class="card" style="width: 5.5rem;">
               <i class="fa-regular fa-sun sunny-time"></i>
               <div class="card-body">
-                  <h3 class="card-title">7°</h3>
-                  <p class="card-text">${day}</p>
+                  <h3 class="card-title">${Math.round(day.temperature.maximum)}°</h3>
+                  <p class="card-text">Tues</p>
               </div>
           </div>
         </div>
