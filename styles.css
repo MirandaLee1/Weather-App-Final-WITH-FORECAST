@@ -1,20 +1,13 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 
 .container {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 
 }
 .weather-app {
   display: block;
   padding: 20px 20px;
-  transform: scale(0.80);
+  transform: scale(0.78);
   transform-origin: top center;
   border-color:  rgba(213, 235, 235, 0.779);
   border-radius: 5%;
@@ -91,6 +84,7 @@ h5:first-letter {
   border: 5px solid white;
   border-radius: 10%;
   width: 15%;
+  height: 10%;
   margin: 0 10px;
   text-align: center;
   padding: 5px; /* Adjust the padding to your preference */
@@ -98,17 +92,23 @@ h5:first-letter {
 
 .weather-forecast-icon img {
 text-align: center;
-  width: 50px;
+  width: 70px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .card-title {
   font-size: 20px;
   text-align: center;
+   margin-bottom: 0;
+  padding: 0;
 }
 
 .card-text {
   font-size: 12px;
   text-align: center;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 
@@ -158,4 +158,5 @@ text-align: center;
 .Footnote {
 font-size: 10px;
 text-align: center;
+margin: auto 70px 0 auto;
 }

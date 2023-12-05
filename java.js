@@ -74,6 +74,13 @@ function handleSearchSubmit(event)
   
 }
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[date.getDay()];
+}
+
 function getForecast(city)  {
 let apiKey = "a8653dt9c848fab44feofb6cd970ad29";
 let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
@@ -96,7 +103,7 @@ function displayForecast(response) {
         </div>
         <div class="card-body">
           <h3 class="card-title">${Math.round(day.temperature.maximum)}°</h3>
-          <p class="card-text">Tues</p>
+          <p class="card-text">${formatDay(day.time)}</p>
         </div>
       </div>`;
       }
