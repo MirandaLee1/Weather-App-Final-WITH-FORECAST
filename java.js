@@ -85,27 +85,26 @@ function displayForecast(response) {
 
   let forecastHtml = "";
 
-  response.data.daily.forEach(function (day) {
-    forecastHtml = 
-      forecastHtml + 
-      `
-      <div class="row">
-        <div class="col">
-          <div class="card" style="width: 5.5rem;">
-              <i class="fa-regular fa-sun sunny-time"></i>
-              <div class="card-body">
-                  <h3 class="card-title">${Math.round(day.temperature.maximum)}°</h3>
-                  <p class="card-text">Tues</p>
-              </div>
-          </div>
+  response.data.daily.forEach(function (day, index) {
+    if (index <5) {
+    forecastHtml += `
+      <div class="card">
+        <div class="weather-forecast-icon">
+          <img src="${day.condition.icon_url}" alt="${
+      day.condition.description
+    }">
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">${Math.round(day.temperature.maximum)}°</h3>
+          <p class="card-text">Tues</p>
         </div>
       </div>`;
+      }
   });
 
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
 }
-
 
 
 let searchFormElement = document.querySelector("#searchForm")
